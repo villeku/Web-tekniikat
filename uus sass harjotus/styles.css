@@ -1,0 +1,50 @@
+@charset "UTF-8";
+h1 {
+  color: blue;
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 5px;
+}
+h1 .highlight {
+  /*Jos teeman väri on sinien korostetaan keltaisella, jos pinkki niin mustalla ja muuten punaisella*/
+  color: yellow;
+  font-weight: bold;
+}
+
+.bordered {
+  color: pink;
+  border: 1px solid pink;
+  padding: 5px;
+  margin: 5px;
+}
+.bordered .highlight {
+  /*Jos teeman väri on sinien korostetaan keltaisella, jos pinkki niin mustalla ja muuten punaisella*/
+  color: black;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  margin: 5px;
+}
+.green .highlight {
+  /*Jos teeman väri on sinien korostetaan keltaisella, jos pinkki niin mustalla ja muuten punaisella*/
+  color: red;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  border: 1px solid blue;
+  padding: 5px;
+  margin: 5px;
+}
+.blue .highlight {
+  /*Jos teeman väri on sinien korostetaan keltaisella, jos pinkki niin mustalla ja muuten punaisella*/
+  color: yellow;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */

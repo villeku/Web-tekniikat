@@ -1,0 +1,35 @@
+
+@mixin theme($color: blue) {
+    color: $color;
+    border: 1px solid $color;
+    padding: 5px;
+    margin: 5px;
+    .highlight{
+        /*Jos teeman väri on sinien korostetaan keltaisella, jos pinkki niin mustalla ja muuten punaisella*/
+            @if $color == blue { 
+                color: yellow
+            } @else if $color == pink {
+                color: black;
+            } @else {
+                color: red;
+            }
+        font-weight: bold;
+    }
+}
+
+$highlight: pink;
+
+h1{
+    @include theme;
+}
+
+.bordered {
+    @include theme($color: $highlight);
+}
+
+.green {
+    @include theme($color: green);
+}
+.blue {
+    @include theme();
+}
